@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+
+<html>
+<meta charset="utf-8">
+    <title></title>
+<style>
+body  {
+  background-image: url(" Csgowall2.jpg");
+  background-size: cover;
+  background-color: #cccccc;
+  opacity: 0.9;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 19px 15px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  width: 29%;
+  height: 50%;
+  border-radius: 5px;
+  background-color: white;
+  padding: 15px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 650px;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: white;
+  font-size: 16px;
+  resize: none;
+}
+</style>
+<body>
+
+<div>
+  <form action="/csgo_form.php">
+    <label for="name">User Name</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name" >
+     
+    <label for="age">Password</label>
+    <input type="text" id="age" name="name" placeholder="Enter your age" >
+
+    <label for="email">Email</label>
+    <input type="text" id="email" name="email" placeholder="Enter your Email" >
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="Select Country">Select Country:</option>
+      <option value="philippines">Philippines</option>
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+      <option value="canada">Canada</option>
+      <option value="china">China</option>
+      <option value="Russia">Russia</option>
+      <option value="Germany">Germany</option>
+      <option value="Korea">Korea</option>
+      <option value="Japan">Japan</option>
+    </select>
+  <br><br>
+    <label for="phone">Enter Phone Number:</label>
+    <input type="tel" id="phone" name="phone" placeholder="" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
+     
+<br><br>
+  <form>
+   <label for="optradio">Gender:</lebel>
+   <label class="radio-inline">
+    <input type="radio" name="optradio">Male
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="optradio">Female
+    </label>
+  <h4>Choose any favorite Team:</h4>
+  <input type="checkbox" name="group1" value="Navi">
+  <label for="group1"> Navi</label><br>
+  <input type="checkbox" name="group2" value="Cloud9">
+  <label for="group2"> Cloud9</label><br>
+  <input type="checkbox" name="group3" value="Fazeclan" 
+  <label for="group3"> Faze Clan</label><br>
+  <input type="checkbox" name="group4" value="Astralis" 
+  <label for="group4"> Astralis</label><br>
+  <input type="checkbox" name="group3" value="Big" 
+  <label for="group3"> Big</label><br>
+  <input type="checkbox" name="group5" value="EnVyUs" 
+  <label for="group5"> EnVyUs</label><br>
+  <input type="checkbox" name="group5" value="Fnatic" 
+  <label for="group5"> Fnatic</label><br>
+  <input type="checkbox" name="group5" value="G2Esports" 
+  <label for="group5"> G2 Esports</label><br>
+  <input type="checkbox" name="group5" value="Gambit Gaming" 
+  <label for="group5"> Gambit Gaming</label><br>
+  <input type="checkbox" name="group5" value="GODSENT" 
+  <label for="group5"> GODSENT</label><br>
+</form>
+<br>
+<input type="submit" value="Submit">
+  </form>
+</div>
+
+</body>
+</html>
