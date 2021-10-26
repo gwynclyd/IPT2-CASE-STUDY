@@ -1,23 +1,43 @@
 <!DOCTYPE html>
-
 <html>
-    <head>
-    <meta charset="utf-8">
-    <title>Csgo</title>
-    </head>
-<style>
-body  {
-  background-image: url(" Csgowall1.jpg");
-  background-size: cover;
-  background-color: #cccccc;
-  opacity: 0.9;
-}
+<head>
+     <meta charset=utf-8">
+     <title>Csgo</title>
+     </head>
+     <style>
+       body{
+           background-image: url(" Csgowall1.jpg");
+           background-size: cover;
+           background-color: #cccccc;
+           opacity: 0.9;
+        }
+      
+        .maindiv{
+            width: 50%;
+            height: 500px;
+            position: absolute;
+            left: 32%;
+            top: 60%;
+            transform: translate(-50%, -50%);
+            background-size: 100% 100%; 
+            animation:slider 59s infinite linear;
+        }
+        @keyframes slider{
+            0%{background-image: url("champion1.jpg"); }
+            
+            35%{background-image: url("champion2.jpg"); }
+            
+            75%{background-image: url("champion3.jpg");
 
+            100%{background-image: url("champion1.jpg"); }
+        }
 </style>
+
 <body>
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
 
 <ul>
+    
     <center>
     <li><a href="REGISTER.HTML">REGISTER</a></li>
     <li><a href="LOGIN.HTML">LOGIN</a></li>
@@ -25,6 +45,14 @@ body  {
     <li><a href="CONTACT.html">SUPPORT</a></li>
     <li><a href="ABOUT.html">ABOUT</a></li>
     </center>
+    
+   
 </ul>
+
+    <div class="maindiv">
+     
+    </div>
+     
+     
 </body>
 </html>
