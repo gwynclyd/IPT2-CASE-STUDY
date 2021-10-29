@@ -1,61 +1,46 @@
 <!DOCTYPE html>
-<html>
+<!-- Created By CodingNepal -->
 <head>
-     <meta charset=utf-8">
-     <title>Csgo</title>
-     </head>
-     <style>
+   <meta charset="utf-8">
+   <title>CS:GO</title>
+    <style>
        body{
            background-image: url(" Csgowall1.jpg");
            background-size: cover;
-           background-color: #cccccc;
-           opacity: 1;
-        }
-      
-        .maindiv{
-            width: 40%;
-            height: 490px;
-            position: absolute;
-            left: 27%;
-            top: 54%;
-            transform: translate(-50%, -50%);
-            background-size: 100% 100%; 
-            animation:slider 59s infinite linear;
-        }
-        @keyframes slider{
-            0%{background-image: url("champion1.jpg"); }
-            
-            35%{background-image: url("champion2.jpg"); }
-            
-            75%{background-image: url("champion3.jpg");
+           height: calc(108vh - 80px);
+          
+           }
+    </style>
 
-            100%{background-image: url("champion1.jpg"); }
-        }
-</style>
-
+   <link rel="stylesheet" href="style.css">
+   <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
 <body>
-  <link rel="stylesheet" href="style.css">
-
-<ul>
-    
-    <center>
-    <li><a href="REGISTER.HTML">REGISTER</a></li>
-    <li><a href="LOGIN.HTML">LOGIN</a></li>
-    <li><a href="CSGOTOURNAMENT.html">CS:GO TOURNAMENTS</a></li>
-    <li><a href="SKINS.HTML">SKINS</a></li>
-    <li><a href="STEAM.HTML">STEAM TV</a></li>
-    <li><a href="MAPS.HTML">MAPS</a></li>
-    <li><a href="CONTACT.HTML">SUPPORT</a></li>
-    <li><a href="ABOUT.html">ABOUT</a></li>
-    </center>
-    
+   <nav>
+      <ul>
+         <li class="logo">#GLHF</li>
+         <li class="items"><a href="REGISTER.HTML">REGISTER</a></li>
+         <li class="items"><a href="LOGIN.HTML">LOGIN</a></li>
+         <li class="items"><a href="CSGOTOURNAMENT.HTML">TOURNAMENTS</a></li>
+         <li class="items"><a href="SKINS.HTML">SKINS</a></li>
+         <li class="items"><a href="STEAM.HTML">STEAM TV</a></li>
+         <li class="items"><a href="MAPS.HTML">MAPS</a></li>
+         <li class="items"><a href="CONTACT.HTML">SUPPORT</a></li>
+         <li class="items"><a href="ABOUT.HTML">ABOUT</a></li>
    
-</ul>
+         <li class="btn"><a href="#"><i class="fas fa-bars"></i></a></li>
+      </ul>
+    </nav>
 
-    <div class="maindiv">
-     
-    </div>
-     
-     
+   <script>
+      $(document).ready(function(){
+        $('.btn').click(function(){
+          $('.items').toggleClass("show");
+          $('ul li').toggleClass("hide");
+        });
+        });
+   </script>
 </body>
 </html>
